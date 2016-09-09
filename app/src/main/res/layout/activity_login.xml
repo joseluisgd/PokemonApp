@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:src="@drawable/pokemon_front"
+        android:scaleType="centerCrop"
+    android:layout_weight="2"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:layout_margin="6sp"
+            android:id="@+id/usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa Usuario"
+            android:layout_centerVertical="true"
+             />
+        <Button
+            android:layout_margin="6sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_ingresar"
+            android:text="INGRESAR"
+            android:textColor="#FFCB05"
+            android:layout_below="@id/usu"
+            android:background="#2F6DB4"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
