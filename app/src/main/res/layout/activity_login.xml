@@ -25,6 +25,7 @@
             android:layout_centerVertical="true"
              />
         <Button
+            android:id="@+id/but"
             android:layout_margin="6sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -18,11 +18,12 @@ public class GestorPokemonApp {
     public List<Pregunta> obtenerPreguntas(){
         List<Pregunta> preguntas = new ArrayList<>();
 
-        //preguntas.add(new Pregunta(1, "¿Cuántos kilos pesa Pinsir? (kilos)", "54", R.drawable.bulbasaur));
-       // preguntas.add(new Pregunta(2, "¿Cuánto mide Magmar? (metros)", "1.24", R.drawable.ivysaur));
-       // preguntas.add(new Pregunta(3, "¿Cuál es la evolución de Gloom?", "Vileplume", R.drawable.venusaur));
-       // preguntas.add(new Pregunta(4, "¿Qué número es Snorlax?", "143", R.drawable.charmander));
-       // preguntas.add(new Pregunta(5, "¿Cuánto pesa Kabuto? (kilos)", "11", R.drawable.charmeleon));
+        preguntas.add(new Pregunta(1, "¿Cuántos kilos pesa Pinsir? (kilos)", "54", R.drawable.bulbasaur));
+        preguntas.add(new Pregunta(2, "¿Cuánto mide Magmar? (metros)", "1.24", R.drawable.ivysaur));
+        preguntas.add(new Pregunta(3, "¿Cuál es la evolución de Gloom?", "Vileplume", R.drawable.venusaur));
+        preguntas.add(new Pregunta(4, "¿Qué número es Snorlax?", "143", R.drawable.charmander));
+        preguntas.add(new Pregunta(5, "¿Cuánto pesa Kabuto? (kilos)", "11", R.drawable.charmeleon));
+
 
         return preguntas;
     }
