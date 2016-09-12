@@ -3,4 +3,36 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:background="#2F6DB4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:layout_margin="10sp">
+        <TextView
+            android:textColor="#FFCB05"
+            android:id="@+id/pun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/puntaje"
+            android:textSize="12pt"/>
+        <TextView
+            android:textSize="10pt"
+            android:textColor="#FFCB05"
+            android:id="@+id/puntos"
+            android:layout_below="@id/pun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_123"/>
+    </RelativeLayout>
+
+    <Button
+        android:textColor="#FFCB05"
+        android:id="@+id/reintentar"
+        android:background="#2F6DB4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reintentar"
+        android:layout_margin="10sp"/>
+
 </LinearLayout>

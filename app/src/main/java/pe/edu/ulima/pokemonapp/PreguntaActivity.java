@@ -23,8 +23,17 @@ public class PreguntaActivity extends AppCompatActivity {
     int i=0;
     EditText respuesta;
     ImageView imagen;
+    int puntos=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+        if(savedInstanceState!=null){
+            i=savedInstanceState.getInt("i");
+            puntos=savedInstanceState.getInt("puntos");
+
+
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pregunta);
 
@@ -50,11 +59,14 @@ public class PreguntaActivity extends AppCompatActivity {
                 i++;
                 if(preguntas.size()==i){
                     Intent intent=new Intent(PreguntaActivity.this,PuntajeActivity.class);
+                    intent.putExtra("puntos",puntos);
                     startActivity(intent);
 
                 }else{
                     pregunta.setText(String.format("Pregunta %s",preguntas.get(i).getId()));
                     txt.setText(preguntas.get(i).getPregunta());
+                    respuesta.setText("");
+
                 }
             }
         });
@@ -66,6 +78,7 @@ public class PreguntaActivity extends AppCompatActivity {
                     imagen.setImageResource(preguntas.get(i).getImagen());
                     Toast msg= Toast.makeText(PreguntaActivity.this,"Respuesta correcta!!!!!", Toast.LENGTH_SHORT);
                     msg.show();
+                    puntos+=10;
                 }else{
                     Toast msg= Toast.makeText(PreguntaActivity.this,"Respuesta incorrecta!!!!!", Toast.LENGTH_SHORT);
                     msg.show();
@@ -73,15 +86,12 @@ public class PreguntaActivity extends AppCompatActivity {
             }
         });
 
+    }
 
-
-
-
-
-
-
-
-
-
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState){
+        savedInstanceState.putInt("i", i);
+        savedInstanceState.putInt("puntos", puntos);
+        super.onSaveInstanceState(savedInstanceState);
     }
 }

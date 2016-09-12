@@ -11,6 +11,7 @@
         android:src="@drawable/pokeball"
         android:layout_weight="1"/>
     <RelativeLayout
+        android:layout_margin="10sp"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -21,12 +22,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15pt"
-            android:text="Pregunta %s"/>
+            android:text="@string/pregunta_s"/>
         <TextView
+            android:layout_margin="4sp"
             android:id="@+id/txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Este es un texto de ejemplo"
+        android:text="@string/este_es_un_texto_de_ejemplo"
             android:textSize="13pt"
             android:layout_below="@id/pregunta"
             android:layout_centerHorizontal="true"
@@ -38,20 +40,31 @@
             android:layout_below="@id/txt"
             android:padding="10sp"/>
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_alignParentBottom="true"
-            android:src="@drawable/ic_send"
-            android:id="@+id/check" />
-        <ImageButton
-            android:id="@+id/siguiente"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:src="@drawable/ic_next"
-            android:layout_alignParentRight="true"
-            />
+            android:layout_margin="10sp">
+            <ImageButton
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_send"
+                android:id="@+id/check"
+                android:background="#2F6DB4"/>
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next"
+                android:background="#2F6DB4"
+
+                />
+        </LinearLayout>
+
+
     </RelativeLayout>
 
 </LinearLayout>

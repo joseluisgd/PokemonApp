@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PokemonApp</string>
+    <string name="este_es_un_texto_de_ejemplo">Este es un texto de ejemplo</string>
+    <string name="pregunta_s">Pregunta %s</string>
+    <string name="ingresa_usuario">Ingresa Usuario</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="reintentar">Reintentar</string>
+    <string name="_123">123</string>
+    <string name="puntaje">Puntaje:</string>
 </resources>

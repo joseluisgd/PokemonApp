@@ -12,6 +12,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_login);
 
         usu = (EditText)findViewById(R.id.usu);
@@ -29,4 +30,5 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
 }
